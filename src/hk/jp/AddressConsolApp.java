@@ -198,7 +198,7 @@ public class AddressConsolApp {
                             break;
                         case 3:
                             int key = UI.enterInteger("Numer adresu do usunięcia(widoczne przy wyświetleniu): ");
-                            mapa1.remove(key); break;
+                            mapa2.remove(key); break;
                         case 4:
                             System.out.println();
                             System.out.println("Zawartość TreeMap: ");

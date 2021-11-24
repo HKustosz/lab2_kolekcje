@@ -33,7 +33,7 @@ public class AddressConsolApp {
             ;
 
     static Address createAddress(){
-        String city = UI.enterString("Podaj miasto ");
+        String city = UI.enterString("Podaj miasto: ");
         String street = UI.enterString("Podaj nazwę ulicy: ");
         int houseNumber = UI.enterInteger("Podaj numer domu: ");
         Address address;
@@ -197,11 +197,11 @@ public class AddressConsolApp {
                             mapa2.put(j, address);
                             break;
                         case 3:
-                            zbior1.remove(createAddress()); break;
+                            mapa2.remove(createAddress()); break;
                         case 4:
                             System.out.println();
                             System.out.println("Zawartość TreeMap: ");
-                            for(Entry<Integer, Address> entry : mapa1.entrySet()){
+                            for(Entry<Integer, Address> entry : mapa2.entrySet()){
                                 System.out.println(entry.getKey()+" "+entry.getValue().getCity()+" "+entry.getValue().getStreet()+" "+entry.getValue().getHouseNumber());
                             }
                             break;
